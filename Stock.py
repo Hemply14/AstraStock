@@ -200,9 +200,9 @@ class EnhancedStockPredictor:
         df['IsMonthStart'] = df.index.is_month_start.astype(int)
         df['IsMonthEnd'] = df.index.is_month_end.astype(int)
         
-        # CRITICAL FIX: Define target as NEXT DAY's closing price
+        # Define target as NEXT DAY's closing price
         print("🎯 Setting target as next day's closing price...")
-        df['Target'] = df['Close'].shift(-1)  # This is the key fix!
+        df['Target'] = df['Close'].shift(-1)
         
         # Drop rows with NaN values (from rolling calculations and the last row due to shift(-1))
         initial_len = len(df)
