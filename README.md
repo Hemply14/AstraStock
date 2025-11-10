@@ -6,8 +6,70 @@ An enterprise-grade stock prediction system for Indian stock markets with advanc
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-production-brightgreen.svg)
 
+## 📸 Screenshots
+
+### Streamlit Web Interface
+![Streamlit Dashboard](assets/streamlit.png)
+*Interactive web interface with real-time stock selection and analysis*
+
+![Streamlit Advanced Features](assets/streamlit-2.png)
+*Advanced configuration options and real-time predictions*
+
+### Stock Category Selection
+
+#### Large Cap Stocks
+![Large Cap Stocks](assets/LargecapStocks.png)
+*TCS, Reliance, HDFC Bank, Infosys, and other blue-chip companies*
+
+#### Banking Sector
+![Banking Stocks](assets/BankingStocks.png)
+*SBI, ICICI Bank, Kotak Mahindra, and Axis Bank analysis*
+
+#### IT Sector
+![IT Stocks](assets/ItStocks.png)
+*Wipro, HCL Tech, Tech Mahindra, and other IT giants*
+
+#### Mid Cap Stocks
+![Mid Cap Stocks](assets/MidcapStocks.png)
+*Bajaj Finance, Titan, DMart, and Maruti Suzuki*
+
+### Analysis Output Examples
+
+#### Prediction Results - Example 1
+![Output 1](assets/output-1.png)
+*Model predictions with confidence intervals*
+
+#### Prediction Results - Example 2
+![Output 2](assets/output-2.png)
+*Technical indicators and price forecasts*
+
+#### Prediction Results - Example 3
+![Output 3](assets/output-3.png)
+*Walk-forward validation results*
+
+#### Prediction Results - Example 4
+![Output 4](assets/output-4.png)
+*Ensemble model performance comparison*
+
+#### Prediction Results - Example 5
+![Output 5](assets/output-5.png)
+*SHAP feature importance analysis*
+
+#### Prediction Results - Example 6
+![Output 6](assets/output-6.png)
+*Trading strategy backtest visualization*
+
+#### Prediction Results - Example 7
+![Output 7](assets/output-7.png)
+*Performance metrics and evaluation*
+
+#### Prediction Results - Example 8
+![Output 8](assets/output-8.png)
+*Future price predictions with uncertainty estimation*
+
 ## 📋 Table of Contents
 
+- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Installation](#-installation)
 - [Usage](#-usage)
@@ -89,11 +151,13 @@ Launch the interactive web interface:
 streamlit run Stock.py streamlit
 ```
 
-Features:
+**Features:**
 - Select from popular Indian stocks or enter custom symbols
 - Configure analysis parameters
 - Real-time visualization
 - Interactive charts and metrics
+
+![Streamlit Interface](assets/streamlit.png)
 
 ### 2. Interactive Console Mode
 
@@ -103,7 +167,7 @@ Run the interactive command-line interface:
 python Stock.py interactive
 ```
 
-Features:
+**Features:**
 - Guided stock selection
 - Category-based browsing
 - Customizable parameters
@@ -182,6 +246,8 @@ predictor.plot_enhanced_results()
 - Linear Regression as meta-learner
 - Reduces individual model bias
 
+![Model Comparison](assets/output-4.png)
+
 ## 💰 Trading Strategy
 
 ### Signal Generation
@@ -209,6 +275,8 @@ predictor.plot_enhanced_results()
 - Maximum Drawdown
 - Number of trades
 
+![Trading Strategy Example](assets/output-6.png)
+
 ## 📈 Performance Metrics
 
 ### Prediction Accuracy
@@ -229,6 +297,8 @@ predictor.plot_enhanced_results()
 | 0.2 - 0.4 | ⚠️ Moderate (Typical for stocks) |
 | 0 - 0.2 | 🔍 Limited (Common in stock prediction) |
 | < 0 | ❌ Poor (Worse than simple average) |
+
+![Performance Metrics](assets/output-7.png)
 
 ## 🎯 Examples
 
@@ -296,6 +366,8 @@ Max Drawdown:        -8.2%
 🎉 Strategy significantly outperforms buy & hold!
 ```
 
+![Sample Analysis Output](assets/output-1.png)
+
 ## 🔍 Key Technical Details
 
 ### Time Series Structure
@@ -322,6 +394,70 @@ Max Drawdown:        -8.2%
 - **Scoring**: Negative MSE
 - **Iterations**: 10 per model
 - **Parallel Processing**: All CPU cores
+
+## 📁 Project Structure
+
+```
+stock-predictor/
+│
+├── Stock.py                 # Main application file
+├── requirements.txt         # Python dependencies
+├── README.md               # This file
+├── LICENSE                 # MIT License
+│
+├── assets/                 # 📸 Your screenshots are here
+│   ├── streamlit.png
+│   ├── streamlit-2.png
+│   ├── LargecapStocks.png
+│   ├── BankingStocks.png
+│   ├── ItStocks.png
+│   ├── MidcapStocks.png
+│   ├── output-1.png
+│   ├── output-2.png
+│   ├── output-3.png
+│   ├── output-4.png
+│   ├── output-5.png
+│   ├── output-6.png
+│   ├── output-7.png
+│   └── output-8.png
+│
+├── models/                 # Saved model files (auto-generated)
+├── results/                # Analysis results (auto-generated)
+└── logs/                   # Application logs (auto-generated)
+```
+
+## 📸 Screenshot Guide
+
+All screenshots are located in the `assets/` folder and are already integrated throughout this README!
+
+### Available Screenshots:
+
+**Streamlit Interface:**
+- `streamlit.png` - Main dashboard
+- `streamlit-2.png` - Advanced features
+
+**Stock Categories:**
+- `LargecapStocks.png` - Blue-chip companies
+- `BankingStocks.png` - Banking sector analysis
+- `ItStocks.png` - IT sector stocks
+- `MidcapStocks.png` - Mid-cap opportunities
+
+**Analysis Outputs:**
+- `output-1.png` through `output-8.png` - Various analysis results including predictions, backtests, SHAP analysis, and performance metrics
+
+### Adding New Screenshots:
+
+1. Save your new screenshots in the `assets/` folder
+2. Update the README with the new image reference:
+   ```markdown
+   ![Description](assets/your-new-screenshot.png)
+   ```
+
+**Tips for Screenshots:**
+- Use descriptive filenames
+- PNG format recommended for clarity
+- Keep images under 2MB for faster loading
+- Capture full-width views for best presentation
 
 ## ⚠️ Disclaimer
 
